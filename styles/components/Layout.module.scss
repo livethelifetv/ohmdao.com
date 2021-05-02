@@ -1,0 +1,176 @@
+// Layout fixed header
+.ohm__header {
+  height: 60px;
+  width: 100%;
+  background-color: #0a0a0d;
+  border-bottom: 2px solid #38393e;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+
+  > div {
+    display: inline-block;
+    vertical-align: top;
+
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+
+      li {
+        display: inline-block;
+        margin: 2px 20px 0px 20px;
+        line-height: 54px;
+        border-bottom: 2px solid transparent;
+
+        a {
+          color: #a6a6a8;
+          font-size: 16px;
+          transition: 100ms ease-in-out;
+        }
+
+        a:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .ohm__header_logo {
+    height: 100%;
+    width: 180px;
+    margin-left: 20px;
+
+    a {
+      img {
+        height: 40px;
+        margin-top: 9px;
+      }
+
+      transition: 100ms ease-in-out;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .ohm__header_menu {
+    height: 100%;
+    width: calc(100% - 400px);
+    text-align: center;
+  }
+
+  .ohm__header_actions {
+    height: 100%;
+    width: 180px;
+    margin-right: 20px;
+
+    button {
+      margin-top: 11px;
+    }
+  }
+
+  .ohm__header_accordion {
+    display: none;
+    width: calc(100% - 200px);
+    padding-right: 20px;
+
+    > div {
+      float: right;
+      margin-top: 22px;
+    }
+  }
+
+  .ohm__header_mobile {
+    top: 60px;
+    left: 0px;
+    padding: 20px 20px;
+    width: 100%;
+    position: absolute;
+    background-color: #2c2e33;
+    z-index: 9999;
+    border-bottom: 2px solid #74757c;
+
+    ul {
+      margin-block-end: 20px;
+
+      li {
+        text-align: center;
+        display: block;
+        margin: 0px;
+        line-height: 40px;
+        border-bottom: none;
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+// Layout menu active links
+.ohm__header_menu_active {
+  border-bottom-color: #fff !important;
+
+  a {
+    color: #fff !important;
+  }
+}
+
+// Layout mobile menu toggle states
+.ohm__header_mobile_open {
+  display: block !important;
+}
+
+.ohm__header_mobile_closed {
+  display: none !important;
+}
+
+// Layout content wrapper
+.ohm__content {
+  padding-top: 60px;
+  min-height: calc(100vh - 64px);
+
+  .ohm__content_sizer {
+    max-width: 1140px;
+    padding: 30px 10px;
+    width: calc(100% - 20px);
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+// Layout footer
+.ohm__footer {
+  height: 60px;
+  padding-top: 10px;
+  border-top: 2px solid #38393e;
+  text-align: center;
+
+  p {
+    margin: 0px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #a6a6a8;
+  }
+}
+
+// Responsiveness
+@media screen and (max-width: 700px) {
+  .ohm__header {
+    .ohm__header_accordion {
+      display: inline-block;
+    }
+
+    .ohm__header_menu {
+      display: none;
+    }
+
+    .ohm__header_actions {
+      display: none;
+    }
+  }
+}

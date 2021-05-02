@@ -1,0 +1,25 @@
+{
+  "name": "ohmdao",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@0xsequence/multicall": "^0.14.3",
+    "@studydefi/money-legos": "^2.4.2",
+    "@walletconnect/web3-provider": "^1.4.1",
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "ethers": "^5.1.4",
+    "next": "10.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hamburger-menu": "^1.2.1",
+    "sass": "^1.32.11",
+    "unstated-next": "^1.1.0",
+    "web3modal": "^1.9.3"
+  }
+}

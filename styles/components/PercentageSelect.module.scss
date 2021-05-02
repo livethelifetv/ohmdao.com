@@ -1,0 +1,36 @@
+.ohm__percentage {
+  display: block;
+  margin-block-end: 10px;
+  border: 2px solid #474950;
+  border-radius: 8px;
+  overflow: hidden;
+
+  button {
+    display: inline-block;
+    border-radius: 0px;
+    width: 25% !important;
+    background-color: transparent;
+    border: none;
+    background-color: #33353a;
+    border-right: 2px solid #474950;
+    float: none;
+    color: white;
+  }
+
+  button:last-of-type {
+    border-right: none;
+  }
+
+  button:hover {
+    background-color: #4a4d53;
+  }
+
+  button:disabled {
+    background-color: #33353a;
+    color: white;
+  }
+}
+
+.ohm__percentage_disabled {
+  cursor: not-allowed;
+}
